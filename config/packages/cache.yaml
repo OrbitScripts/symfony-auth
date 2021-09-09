@@ -1,0 +1,12 @@
+framework:
+    cache:
+        prefix_seed: posiflora/couriers_api
+        app: cache.adapter.redis_tag_aware
+        default_redis_provider: "redis://%redis.host%:%redis.port%"
+        pools:
+            cache.term.long:
+                default_lifetime: '%cache.long%'
+            cache.term.medium:
+                default_lifetime: '%cache.medium%'
+            cache.term.short:
+                default_lifetime: '%cache.short%'

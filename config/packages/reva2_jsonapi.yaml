@@ -1,0 +1,6 @@
+reva2_jsonapi:
+  cache_adapter: void
+  schemas:
+    App\Entity\Auth\Session: App\Schema\Auth\SessionSchema
+    App\Entity\Auth\User: App\Schema\Auth\UserSchema
+
